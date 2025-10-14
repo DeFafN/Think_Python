@@ -7,36 +7,22 @@ right_justify(string)
 
 #Exercise3.2 Chapter 3
 
-def do_twice (f):
-    f()
-    f()
-
 def print_spam():
     print('спам')
-do_twice(print_spam)
 
-def do_twice_modify(func, value):
+def do_twice(func, value):
     print_spam()
     print_spam()
-
-do_twice_modify(print_spam, "spam")
 
 def print_twice(text):
     print(text)
     print(text)
 
-def do_twice_modify2(func, value):
-    print(value)
-    print(value)
-
-
-do_twice_modify2(print_twice, 'spam')
-
 def do_four(func, value):
-    do_twice_modify2(func, value)
-    do_twice_modify2(func, value)
+    do_twice(func, value)
+    do_twice(func, value)
 
-do_four(do_twice_modify2, 'Спам')
+do_four(do_twice, 'Спам')
 
 #Exercise3.3 Chapter 3
 def print_raw():
