@@ -1,6 +1,5 @@
-import turtle
+
 import math
-bob = turtle.Turtle()
 
 # Exercises Chapter 4
 
@@ -24,12 +23,11 @@ def circle(t, r):
 
 def arc(t, r, angle):
     arc_length = 2 * math.pi * r * angle/360
-    n =  arc_length / 4 + 1
+    n =  int(arc_length / 3 + 1)
     step_length = arc_length / n
     arc_angle = angle / n
     polyline(t, n, step_length, arc_angle)
 
-turtle.mainloop()
 
 
 # main -> bob, circle (t = bob, radius = input)
