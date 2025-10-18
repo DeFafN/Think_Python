@@ -17,22 +17,16 @@ def polyline(t, n, length, angle):
 
 def polygone(t, length,n):
     angle = 360/n
-    for i in range(n):
-        t.fd(length)
-        t.lt(angle)
+    polyline(t, n, length, angle)
 
 def circle(t, r):
-    circumference = 2 * math.pi * r
-    n = 50
-    polygone(t, circumference/n, n)
+    arc(t, r, 360)
 
 def arc(t, r, angle):
     arc_length = 2 * math.pi * r * angle/360
     n =  arc_length / 4 + 1
     step_length = arc_length / n
     arc_angle = angle / n
-    for i in range(int(n)):
-        t.fd(step_length)
-        t.lt(arc_angle)
+    polyline(t, n, step_length, arc_angle)
 
 turtle.mainloop()
