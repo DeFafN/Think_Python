@@ -30,3 +30,9 @@ def arc(t, r, angle):
     polyline(t, n, step_length, arc_angle)
 
 turtle.mainloop()
+
+
+# main -> bob, circle (t = bob, radius = input)
+# circle -> arc (bob, radius, angle=360)
+# arc -> (bob, radius, 360) arc_length, n, step_length, arc_angle -> polyline
+# polyline -> (bob, n, step_length, arc_angle)
