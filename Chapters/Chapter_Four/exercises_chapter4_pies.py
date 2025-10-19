@@ -14,7 +14,6 @@ def triangle(charle, length, angle):
     charle.fd(length)
     charle.lt(180 - angle)
 
-
 def polypie(charle, length, number_of_segments):
     angle = 360 / number_of_segments
     for i in range(number_of_segments):
