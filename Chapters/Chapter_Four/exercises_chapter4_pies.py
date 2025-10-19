@@ -1,5 +1,6 @@
 import turtle
 import math
+import exercises_chapter4_flowers
 
 charle = turtle.Turtle()
 charle.hideturtle()
@@ -21,20 +22,15 @@ def polypie(charle, length, number_of_segments):
         triangle(charle, length, angle / 2)
         charle.left(angle)
 
-def move(charle, length):
-    charle.penup()
-    charle.fd(length)
-    charle.pendown()
-
 charle.fillcolor("red")
 charle.begin_fill()
 polypie(charle, 50, 7)
 charle.end_fill()
-move(charle, 100)
+exercises_chapter4_flowers.move(charle, 100)
 charle.fillcolor("green")
 charle.begin_fill()
 polypie(charle, 50, 6)
-move(charle, 100)
+exercises_chapter4_flowers.move(charle, 100)
 charle.end_fill()
 charle.fillcolor("blue")
 charle.begin_fill()
