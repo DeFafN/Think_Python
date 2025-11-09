@@ -347,7 +347,7 @@ def draw_ya(turtle, line_length):
     turtle.forward(line_length)
     turtle.pendown()
 
-draw_k(joe, 100)
+draw_l(joe, 100)
 #move_to_next_letter(joe, letter_spacing, 100)
 #draw_C(joe, 100)
 #move_to_next_letter(letter_spacing)
