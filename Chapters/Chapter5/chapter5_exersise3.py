@@ -1,10 +1,8 @@
 def is_triangle(a, b, c):
-    possible = ('Да')
-    impossible = ('Нет')
     if a > b + c or b > a + c or c > a + b:
-        return impossible
+        return 'Нет'
     else:
-        return possible
+        return 'Да'
 
 
 def user_input():
