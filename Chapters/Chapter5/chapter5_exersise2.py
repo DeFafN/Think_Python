@@ -1,9 +1,11 @@
 def check_fermat(a,b,c,n):
+    ferma_is_right = "Не, не работает"
+    ferma_is_wrong = "Cвятые воробьи. Ферма ошибся"
     if n > 2:
         if a**n + b**n == c**n:
-            print("святые воробьи. Ферма ошибся")
+            return ferma_is_wrong
         else:
-            print("Не, не работает")
+            return ferma_is_right
 
 def get_input():
     a = int(input("Введите целое число a: "))
@@ -12,6 +14,7 @@ def get_input():
     n = int(input("Введите степень n (должна быть больше 2): "))
     if n <= 2:
         print("Степень должна быть больше 2")
-    check_fermat(a,b,c,n)
+    result = check_fermat(a,b,c,n)
+    print(result)
 
 get_input()
