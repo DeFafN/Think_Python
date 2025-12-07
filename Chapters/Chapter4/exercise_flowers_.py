@@ -1,5 +1,5 @@
 import turtle
-import exercises_chapter4_poligone
+import exercise_polygone
 
 alice = turtle.Turtle()
 alice.hideturtle()
