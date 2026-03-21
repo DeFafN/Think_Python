@@ -1,4 +1,4 @@
-def greatest_common_divisor(a: int, b: int) -> int:
+def gratest_common_divisor(a: int, b: int) -> int:
     """
     Возвращает наибольший общий делитель (НОД) двух чисел по алгоритму Евклида.
 
@@ -10,13 +10,13 @@ def greatest_common_divisor(a: int, b: int) -> int:
         int: НОД(a, b)
 
     Примеры:
-        >>> greatest_common_divisor(48, 18)
+        gratest_common_divisor(48, 18)
         6
-        >>> greatest_common_divisor(17, 13)
+        gratest_common_divisor(17, 13)
         1
     """
     if b == 0:
         return a
-    return greatest_common_divisor(b, a % b)
+    return gratest_common_divisor(b, a % b)
 
-print(greatest_common_divisor(48, 18))
+print(gratest_common_divisor(48, 18))
