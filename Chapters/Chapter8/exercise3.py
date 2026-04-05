@@ -1,5 +1,8 @@
-def is_palindrome(string):
-    if string == string[::-1]:
-        return True
-    else:
-        return False
+word = 'банан'
+
+def letter_counter(string, desired_letter):
+    count = 0
+    for letter in string:
+        if letter == desired_letter:
+            count = count + 1
+    return count
