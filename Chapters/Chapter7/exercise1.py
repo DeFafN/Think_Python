@@ -1,19 +1,17 @@
-import math
-def mysqrt(root_expression):
-    x = root_expression / 2
-    while True:
-        y = (x + root_expression / x) / 2
-        if y == x:
-            break
-        x = y
-    return x
+def print_n(string: str, n: int):
+    """
+    Печатает заданную строку указанное количество раз.
 
-def test_sqare_root(number):
-    print('root_expression', 'mysqrt(root_expression)', 'math.sqrt(root_expression)', 'diff')
-    print('-' * 15, '-' * 23, '-' * 25, '-' * 4)
-    limit = number * 10
-    while number < limit:
-        print(f'{number:<15} {mysqrt(number):<23} {math.sqrt(number):<25} {mysqrt(number) - math.sqrt(number):<4}')
-        number += 1
+    Примеры:
+        >>> print_n("Привет", 3)
+        Привет
+        Привет
+        Привет
 
-test_sqare_root(1)
+        >>> print_n("раз", 1)
+        раз
+
+    """
+    while n > 0:
+        print(string)
+        n -= 1
