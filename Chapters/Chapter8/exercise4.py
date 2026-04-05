@@ -13,7 +13,7 @@ def is_reverse(word1: str, word2: str) -> bool:
         return False
     i = 0
     j = len(word2) - 1
-    while j > 0:
+    while j >= 0:
         if word1[i] != word2[j]:
             return False
         i = i+1
