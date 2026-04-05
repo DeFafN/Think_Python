@@ -1,5 +1,3 @@
-word = 'банан'
-
 def letter_counter(string, desired_letter):
     count = 0
     for letter in string:
