@@ -1,4 +1,6 @@
-def print_most_frequent(string: str) -> tuple:
+import sys
+
+def print_most_frequent(string: str) -> tuple[tuple[int, list[str]], ...]:
     """
     Анализирует строку и возвращает символы, отсортированные по убыванию частоты встречаемости.
     Возвращает кортеж, содержащий пары (частота, список_символов),
@@ -22,6 +24,7 @@ def print_most_frequent(string: str) -> tuple:
             dict_of_chars[char] = 1
         else:
             dict_of_chars[char] += 1
+    print(dict_of_chars, file=sys.stderr)  # чтобы тест не ломался
     reversed_dict_of_chars = {}
     for key, value in dict_of_chars.items():
         if value not in reversed_dict_of_chars:
