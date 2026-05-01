@@ -1,6 +1,6 @@
 import time
 
-file = open("/Users/mak/Desktop/Git/Education/Think_Python/Chapters/Chapter9/aa.txt", "r")
+file = open("../words.txt", "r")  # лучше использовать with
 
 def file_to_dict(file):
     """
@@ -60,3 +60,5 @@ binary_search_dict(words,target_word)
 end_time = time.perf_counter()
 elapsed_time = end_time - start_time
 print(f"Время поиска bin: {elapsed_time:.10f}")
+
+# ещё со временем поиска in в списке интересно сравнить
