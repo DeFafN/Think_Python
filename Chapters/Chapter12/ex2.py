@@ -22,7 +22,6 @@ def print_most_frequent(string: str) -> tuple:
             dict_of_chars[char] = 1
         else:
             dict_of_chars[char] += 1
-    print(dict_of_chars)
     reversed_dict_of_chars = {}
     for key, value in dict_of_chars.items():
         if value not in reversed_dict_of_chars:
