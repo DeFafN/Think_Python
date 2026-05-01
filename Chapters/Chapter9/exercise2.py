@@ -52,4 +52,4 @@ def words_without_e(filepath):
     percentage = len(words_without_e) / total_words * 100
     print(f'Слов без буквы "e": {len(words_without_e)}, что составляет {percentage} % от общего числа слов')
 
-words_without_e('/Users/mak/Desktop/Git/Education/Think_Python/Chapters/Chapter9/aa.txt')
+words_without_e('../words.txt')

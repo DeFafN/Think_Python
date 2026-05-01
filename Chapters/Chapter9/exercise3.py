@@ -1,5 +1,5 @@
 stopchars = "abcdef"
-file = open("/Users/mak/Desktop/Git/Education/Think_Python/Chapters/Chapter9/aa.txt", "r")
+file = open("../words.txt", "r")
 list_of_words = file.read().split()
 file.close()
 
